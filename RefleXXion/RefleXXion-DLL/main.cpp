@@ -451,7 +451,7 @@ BOOL Technique2() {
 	if (RtlInitUnicodeString == NULL) {
 		return FALSE;
 	}
-	RtlInitUnicodeString(&ObjectPath, L"\\KnownDlls\\ntdll.dll"); //\\??\\C:\\Windows\\System32\\ntdll.dll
+	RtlInitUnicodeString(&ObjectPath, L"\\KnownDlls\\ntdll.dll");
 
 	InitializeObjectAttributes(&ObjectAttributes, &ObjectPath, OBJ_CASE_INSENSITIVE, NULL, NULL);
 
